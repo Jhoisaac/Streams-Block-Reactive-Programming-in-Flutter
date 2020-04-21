@@ -36,7 +36,7 @@ class TmdbApi {
         'include_video': 'false',
         'page': '$pageIndex',
         'release_date.gte': '$minYear',
-        'release_date.lte': '$maxYear',
+        /*'release_date.lte': '$maxYear',*/
         'with_genres': '$genre',
       },
     );
