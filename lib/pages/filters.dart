@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_range_slider/flutter_range_slider.dart';
+import 'package:flutter_range_slider/flutter_range_slider.dart' as rngslider;
 import 'package:movies_streams/blocs/application_bloc.dart';
 import 'package:movies_streams/blocs/bloc_provider.dart';
 import 'package:movies_streams/blocs/movie_catalog_bloc.dart';
@@ -97,7 +97,7 @@ class FiltersPageState extends State<FiltersPage> {
                             activeTrackColor: const Color(0xFFFF0000),
                             showValueIndicator: ShowValueIndicator.always,
                           ),
-                      child: new RangeSlider(
+                      child: rngslider.RangeSlider(
                         min: 2000.0,
                         max: 2017.0,
                         lowerValue: _minReleaseDate,
